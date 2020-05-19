@@ -1,0 +1,17 @@
+.FormContainer {
+  width: 440px;
+  height: 550px;
+  background-color: #1c2743;
+  z-index: 10;
+  margin: -480px 1005px;
+  position: relative;
+}
+.FormContainer .FormHeading {
+  font-family: "Squada One";
+  font-size: 37px;
+  font-weight: 500;
+  letter-spacing: 1.8px;
+  display: inline-block;
+  margin-top: 35px;
+  color: white;
+}
