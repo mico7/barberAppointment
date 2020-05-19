@@ -1,6 +1,7 @@
 import React from 'react';
 
-
+import BarbersName from "../BarbersName/BarbersName.js";
+import SelectService from "../SelectService/SelectService.js"
 
 import "./FormInput.scss";
 
@@ -9,11 +10,13 @@ const FormInput = () => (
         <form>
             
                 
-            <input type="text" name="firstName" classname="inputField" placeholder="First Name" required/>
-            <input type="text" name="lastName" classname="inputField" placeholder="Last Name"/>
+            <input type="text" name="firstName" placeholder="First Name" required/>
+            <input type="text" name="lastName" placeholder="Last Name"/>
             <br/><br/>
-            <input type="email" name="email" classname="inputField" placeholder="Email" required/>
-            <input type="text" name="firstName" classname="inputField" placeholder="Contact Number" required/>
+            <input type="email" name="email"  placeholder="Email" required/>
+            <input type="text" name="firstName"  placeholder="Contact Number" required/>
+            <BarbersName/>
+            <SelectService/>
             
 
             

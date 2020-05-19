@@ -4,6 +4,7 @@ import './App.css';
 import Header from './components/header/Header';
 import Content from './components/Content/Content';
 import Form from './components/Form/Form';
+;
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Header/>
       <Content/>
       <Form/>
+      
     </div>
   );
 }
