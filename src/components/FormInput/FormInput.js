@@ -47,7 +47,8 @@ class FormInput extends React.Component {
                 
                 <form onSubmit={this.handleSubmit}>
                     
-                      <Row>  
+                      <Row> 
+
                     <input type="text" name="firstName" placeholder="First Name" onChange={this.handleChange} className="firstLast" value={this.state.firstName} required/>
                     <input type="text" name="lastName" placeholder="Last Name" onChange={this.handleChange} className="firstLast" value={this.state.lastName}/>
                     
@@ -77,7 +78,7 @@ class FormInput extends React.Component {
                     </Row>
                     <Row>
                         <PriceField price={this.state.service}/>
-                    <input type="text" name="price" className="price"  placeholder="Select any service" disabled/>
+                    
                     </Row>
 
                     <Row>
@@ -87,7 +88,7 @@ class FormInput extends React.Component {
                 </form>
         
      </Container>
-
+                
             )
     }
     

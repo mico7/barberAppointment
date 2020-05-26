@@ -5,33 +5,52 @@ import "./PriceField.scss";
 class PriceField extends React.Component {
     constructor(props) {
             super(props);
-    this.state = {
-        price:"",
+    
+            this.state = {
+                price:this.props.price,
 
         };
         
     }
+
+    checkPrice = () => {
+        console.log(this.props.price);
+        if(this.props.price === "") {
+            return <input type="text" name="price" className="price"  placeholder="Select any service" disabled/>
+        } else {
+            return <input type="text" name="price" className="price"  placeholder={"Price is " + this.props.price + "€"} disabled/>
+        }
+    }
     
         render() {
-            console.log(this.props)
+            
             return (
                 
                 
+                  
                     
-                <input type="text" name="price" className="price"  placeholder="Select any service" disabled/>
+                       this.checkPrice()
+
+                      )
+
+                    }
+                  
+                
+            
+                
                     
 
                     
 
-            )
+                      }
 
                        
                     
               
         
-        }
+        
 
-}
+
 
 
 export default PriceField;
