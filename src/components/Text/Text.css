@@ -1,33 +1,33 @@
-.TextContainer {
-  display: block;
-  margin-left: -20px;
-}
-.TextContainer .HeadingContainer {
-  display: block;
-  margin-top: -16px;
-  margin-left: -90px;
-}
-.TextContainer .heading {
+.heading {
   font-family: "Squada One";
   font-size: 58px;
   font-weight: 500;
   letter-spacing: 1px;
 }
-.TextContainer .SubHeadingContainer {
-  display: block;
-  margin-top: -25px;
-  margin-left: -90px;
-}
-.TextContainer .SubHeadingContainer .subHeading {
+.subHeading {
   font-family: "Roboto Slab";
   font-size: 17px;
   font-weight: 500;
   letter-spacing: 1px;
+  display: inline-block;
+  margin-top: 22px;
 }
-.TextContainer .SubHeadingContainer .subHeading1 {
+@media (max-width: 576px) {
+  .subHeading {
+    margin-bottom: 10px;
+  }
+}
+.subHeading1 {
   font-family: "Roboto Slab";
   font-size: 17px;
   font-weight: 500;
   letter-spacing: 1px;
   margin-top: -12px;
+  display: inline-block;
+  margin-top: 7px;
+}
+@media (max-width: 576px) {
+  .subHeading1 {
+    display: none;
+  }
 }

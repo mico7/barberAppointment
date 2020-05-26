@@ -1,0 +1,7 @@
+.BarbersOption {
+  float: left;
+  width: 50%;
+}
+.BarbersOption select {
+  height: 35px;
+}

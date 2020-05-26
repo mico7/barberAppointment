@@ -1,10 +1,35 @@
-.FormContainer {
-    width: 440px;
+$breakpoint-tablet:768px;
+$breakpoint-mobile:576px;
+
+
+.formContainer {
+    min-width: 24%;
     height: 550px;
+    position: absolute;
+    z-index: 1;
+    margin-left: 1000px;
+    margin-top: -475px;
     background-color: #1c2743;
-    z-index: 10;
-    margin: -480px 1005px;
-    position: relative;
+    
+    @media (max-width: $breakpoint-tablet) {
+            position: relative;
+            margin: 10px auto;
+            width:80%;
+            
+        
+    }
+    
+    @media (max-width: $breakpoint-mobile) {
+        position: relative;
+        margin:10px auto;
+        width:80%;
+        
+    }
+    
+    
+   
+    
+    
 
     .FormHeading {
         font-family: "Squada One";
@@ -18,3 +43,4 @@
         
     }
 }
+

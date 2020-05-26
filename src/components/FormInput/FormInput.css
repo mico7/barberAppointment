@@ -1,8 +1,45 @@
 .FormInputContainer {
-  margin: 35px 20px;
+  margin: 28px 25px;
   height: 400px;
 }
 .FormInputContainer input {
-  height: 30px;
+  height: 35px;
+  width: 180px;
   margin: 5px;
+  font-family: "Roboto Slab";
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.6px;
+}
+.FormInputContainer select {
+  height: 45px;
+  width: 185px;
+  margin: 5px;
+  border-radius: 5px;
+  font-family: "Roboto Slab";
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.6px;
+  margin-bottom: 20px;
+}
+.FormInputContainer .firstLast {
+  margin-bottom: 30px;
+}
+.FormInputContainer .price {
+  width: 375px;
+  margin: auto;
+  margin-top: 20px;
+}
+.FormInputContainer .submitBtn {
+  background-color: #fd9564;
+  border: none;
+  border-radius: 100px;
+  width: 377px;
+  height: 55px;
+  color: white;
+  font-family: "Robot Slab";
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin-top: 40px;
 }

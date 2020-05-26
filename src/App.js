@@ -1,16 +1,16 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
 
 import Header from './components/header/Header';
-import Content from './components/Content/Content';
+import BarberImage from "./components/BarberImage/BarberImage"
 import Form from './components/Form/Form';
-;
+
 
 function App() {
   return (
     <div className="App">
-      <Header/>
-      <Content/>
+      <Header />
+      <BarberImage/>
       <Form/>
       
     </div>

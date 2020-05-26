@@ -1,9 +1,9 @@
 import React from 'react';
 
-import "./BarbersName.scss";
+import "./Time.scss";
 
-class BarbersName extends React.Component {
-    constructor(props) {
+class Time extends React.Component {
+    /*constructor(props) {
             super(props);
     this.state = {
         barber:[],
@@ -26,7 +26,7 @@ class BarbersName extends React.Component {
     componentDidMount() {
         this.getBarbers();
 }
-    
+    */
         render() {
             
             return (
@@ -62,5 +62,5 @@ class BarbersName extends React.Component {
 
     
     
-export default BarbersName;
+export default Time;
 

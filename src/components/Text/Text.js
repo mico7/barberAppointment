@@ -1,16 +1,25 @@
 import React from 'react'
 import "./Text.scss";
 
-const Text = () => (
-    <div className="TextContainer">
-        <div className="HeadingContainer">
-            <h2 className="heading">BOOK YOUR BARBER</h2>
-        </div>
 
-        <div className="SubHeadingContainer">
-            <p className="subHeading">Great Hair Doesn’t Happen By Chance. It Happens By Appointment! </p> 
-            <p className="subHeading1">So Don't Wait And Book Your Appointment Now!</p>
-        </div>
-     </div>
+import Row from 'react-bootstrap/Row';
+import Container from 'react-bootstrap/Container';
+
+
+const Text = () => (
+   <Container>
+      <Row>
+         <span className="heading"> BOOK YOUR BARBER </span>
+      </Row>
+      
+      <Row>
+         <span className="subHeading">Great Hair Doesn’t Happen By Chance. It Happens By Appointment! </span> 
+      </Row>
+
+      <Row>
+         <span className="subHeading1">So Don't Wait And Book Your Appointment Now!</span>
+      </Row>
+
+            </Container>
 )
 export default Text;

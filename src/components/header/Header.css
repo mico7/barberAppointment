@@ -1,10 +1,16 @@
-.container .image {
-  margin-top: 31px;
-  margin-left: -250px;
+.headerContainer {
+  margin-top: 32px;
+  margin-right: 90px;
 }
-.container .image .cover {
-  width: 870px;
-  height: 580px;
-  border: 3px solid black;
-  padding: 9px;
+@media (max-width: 768px) {
+  .headerContainer {
+    margin: 10px auto;
+    width: 80%;
+  }
+}
+@media (max-width: 576px) {
+  .headerContainer {
+    margin: 10px auto;
+    width: 80%;
+  }
 }

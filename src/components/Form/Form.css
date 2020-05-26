@@ -1,12 +1,27 @@
-.FormContainer {
-  width: 440px;
+.formContainer {
+  min-width: 24%;
   height: 550px;
+  position: absolute;
+  z-index: 1;
+  margin-left: 1000px;
+  margin-top: -475px;
   background-color: #1c2743;
-  z-index: 10;
-  margin: -480px 1005px;
-  position: relative;
 }
-.FormContainer .FormHeading {
+@media (max-width: 768px) {
+  .formContainer {
+    position: relative;
+    margin: 10px auto;
+    width: 80%;
+  }
+}
+@media (max-width: 576px) {
+  .formContainer {
+    position: relative;
+    margin: 10px auto;
+    width: 80%;
+  }
+}
+.formContainer .FormHeading {
   font-family: "Squada One";
   font-size: 37px;
   font-weight: 500;

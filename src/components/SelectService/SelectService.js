@@ -6,7 +6,7 @@ class SelectService extends React.Component {
     constructor(props) {
             super(props);
     this.state = {
-        service:null,
+        service:[],
 
         };
         
@@ -16,9 +16,9 @@ class SelectService extends React.Component {
                     let response = await fetch("https://my-json-server.typicode.com/mitjaprasnikar/barberAppointment/services");
                     let data = await response.json();
             this.setState({
-                service: data.map((service) => 
+                service: data.map((x) => 
                     
-                        <option value={service.name} > {service.name} </option>
+                        x.name
 
                 )  
                 })
@@ -30,14 +30,15 @@ class SelectService extends React.Component {
         render() {
             
             return (
-                <div className="ServiceOption">
-                    <select className="Service">
-                            {this.state.service}
+   
 
-                        </select>
-                    
-               </div>
-            )
+                       this.state.service.map((x) => 
+                        <option key={x} value={x}>
+                                {x}
+                        </option>
+
+            ))
+
         }
 
 }
