@@ -8,6 +8,8 @@ import PriceField from "../PriceField/PriceField"
 import "./FormInput.scss";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
+import Time from '../Time/Time.js';
+import { withRouter } from 'react-router-dom';
 
 class FormInput extends React.Component {
     constructor(props) {
@@ -36,8 +38,9 @@ class FormInput extends React.Component {
 
     handleSubmit = (e) => {
 
-        alert('Your favorite flavor is: ' + this.state.value);
-        e.preventDefault();
+        e.preventDefault()
+        this.props.history.push('/complete');
+       
     }
         render() {
             
@@ -74,7 +77,11 @@ class FormInput extends React.Component {
                     </Row>
                     <Row>
                     <input type="date" name="date" placeholder="AA" onChange={this.handleChange} value={this.state.date} required/>
-                    <input type="text" name="time" onChange={this.handleChange} value={this.state.time} required/>
+                    
+                    <select onChange={this.handleChange} value={this.state.time} name="time">
+                        <option value="" selected disabled hidden>Select Time</option>
+                        <Time/>
+                    </select>
                     </Row>
                     <Row>
                         <PriceField price={this.state.service}/>
@@ -94,4 +101,4 @@ class FormInput extends React.Component {
     
 }
     
-export default FormInput;
+export default withRouter(FormInput);

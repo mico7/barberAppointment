@@ -1,18 +1,22 @@
 import React from 'react';
 import './App.scss';
 
-import Header from './components/header/Header';
-import BarberImage from "./components/BarberImage/BarberImage"
-import Form from './components/Form/Form';
+import HomePage from "./pages/HomePage/HomePage";
+import complete from "./pages/complete/complete"
+
+import { Switch, Route } from 'react-router-dom';
 
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <BarberImage/>
-      <Form/>
+      <Switch>
+        <Route exact path="/" component={HomePage}/>
+        <Route exact path="/complete" component={complete}/>
+        
       
+
+      </Switch>
     </div>
   );
 }
