@@ -39,6 +39,14 @@ class FormInput extends React.Component {
     handleSubmit = (e) => {
 
         e.preventDefault()
+        const data = this.state;
+        
+
+        fetch("https://my-json-server.typicode.com/mitjaprasnikar/barberAppointment/appointments", {
+            method:"POST",
+            body:data,
+        }).then(Response)
+
         this.props.history.push('/complete');
        
     }
@@ -50,17 +58,13 @@ class FormInput extends React.Component {
                 
                 <form onSubmit={this.handleSubmit}>
                     
-                      <Row> 
-
+                    <Row>
                     <input type="text" name="firstName" placeholder="First Name" onChange={this.handleChange} className="firstLast" value={this.state.firstName} required/>
                     <input type="text" name="lastName" placeholder="Last Name" onChange={this.handleChange} className="firstLast" value={this.state.lastName}/>
-                    
                     </Row>
 
                     <Row>
-                    
                     <input type="email" name="email"  placeholder="Email" onChange={this.handleChange} value={this.state.email} required/>
-                    
                     <input type="text" name="contactNumber" placeholder="Contact Number" onChange={this.handleChange}  value={this.state.contactNumber} required/>
                     </Row>
                     
@@ -75,23 +79,24 @@ class FormInput extends React.Component {
                         <SelectService />
                     </select>
                     </Row>
+
+
                     <Row>
                     <input type="date" name="date" placeholder="AA" onChange={this.handleChange} value={this.state.date} required/>
-                    
                     <select onChange={this.handleChange} value={this.state.time} name="time">
                         <option value="" selected disabled hidden>Select Time</option>
                         <Time/>
                     </select>
                     </Row>
+
                     <Row>
                         <PriceField price={this.state.service}/>
-                    
                     </Row>
 
                     <Row>
-
                     <input type="submit" className="submitBtn" value="BOOK APPOINTMENT" />
                     </Row>
+
                 </form>
         
      </Container>

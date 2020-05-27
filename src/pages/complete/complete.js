@@ -18,7 +18,7 @@ class Complete extends React.Component {
 getGif = async() => {
     let response = await fetch("http://api.giphy.com/v1/gifs/search?api_key=KeTn0RgXZQF8EDkUGgQmSaJYuWPEz5mI&q=barber");
     let data = await response.json();
-    console.log(data.data[2]);
+    
     
     const gifsArr = [];
     data.data.map((x) => {

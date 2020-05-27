@@ -14,7 +14,7 @@ class PriceField extends React.Component {
     }
 
     checkPrice = () => {
-        console.log(this.props.price);
+        
         if(this.props.price === "") {
             return <input type="text" name="price" className="price"  placeholder="Select any service" disabled/>
         } else {
